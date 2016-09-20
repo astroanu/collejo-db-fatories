@@ -9,14 +9,13 @@ $factory->define(Collejo\App\Models\Media::class, function (Faker\Generator $fak
 
 $factory->define(Collejo\App\Models\Grade::class, function (Faker\Generator $faker) {
     return [
-        'name' => $faker->name
+        'name' => $faker->firstName
     ];
 });
 
 $factory->define(Collejo\App\Models\Clasis::class, function (Faker\Generator $faker) {
     return [
-        'grade_id' => $faker->randomElement(Collejo\App\Models\Grade::all()->lists('id')->toArray()),
-        'name' => $faker->name
+        'name' => $faker->firstName
     ];
 });
 
