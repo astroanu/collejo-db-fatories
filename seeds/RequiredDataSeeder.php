@@ -23,10 +23,10 @@ class RequiredDataSeeder extends Seeder
 
         // create 12 grades
         foreach (range(1, 12) as $num) {
-            factory(Grade::class)->create(['name' => 'Grade ' . $num]);
+            $grade = factory(Grade::class)->create(['name' => 'Grade ' . $num]);
 
             foreach (range(1, 5) as $class) {
-                factory(Clasis::class)->create(['name' => $num . '-' . $class]);
+                factory(Clasis::class)->create(['name' => $num . '-' . $class, 'grade_id' => $grade->id]);
             }
         }
 
