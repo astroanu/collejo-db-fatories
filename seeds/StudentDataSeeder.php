@@ -1,6 +1,6 @@
 <?php
 
-use Collejo\Core\Database\Seeder;
+use Collejo\App\Database\Seeder;
 use Collejo\App\Models\User;
 use Collejo\App\Models\Media;
 use Collejo\App\Models\Student;

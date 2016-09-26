@@ -1,6 +1,6 @@
 <?php
 
-use Collejo\Core\Database\Seeder;
+use Collejo\App\Database\Seeder;
 use Collejo\App\Models\Grade;
 use Collejo\App\Models\Clasis;
 use Collejo\App\Models\Batch;

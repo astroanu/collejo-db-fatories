@@ -1,6 +1,6 @@
 <?php
 
-use Collejo\Core\Database\Seeder;
+use Collejo\App\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
