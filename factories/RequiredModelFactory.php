@@ -35,14 +35,14 @@ $factory->define(Collejo\App\Models\Term::class, function (Faker\Generator $fake
 
 $factory->define(Collejo\App\Models\StudentCategory::class, function (Faker\Generator $faker) {
     return [
-        'code' => $faker->name,
+        'code' => $faker->firstName,
         'name' => $faker->name
     ];
 });
 
 $factory->define(Collejo\App\Models\EmployeeCategory::class, function (Faker\Generator $faker) {
     return [
-        'code' => $faker->name,
+        'code' => $faker->firstName,
         'name' => $faker->name
     ];
 });
