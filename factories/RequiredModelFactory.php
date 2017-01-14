@@ -70,3 +70,10 @@ $factory->define(Collejo\App\Models\EmployeePosition::class, function (Faker\Gen
 		'name' => $faker->name
     ];
 });
+
+$factory->define(Collejo\App\Models\Subject::class, function (Faker\Generator $faker) {
+    return [
+        'code' => $faker->name,
+        'name' => $faker->name
+    ];
+});
